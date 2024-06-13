@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --primary: #0077b6;
+    --second: #48cae4;
+    --black: #333;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.html::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+section {
+    padding: 5rem 7%;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--second);
+}
+
+/* Header*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i {
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+    margin-right: 30px;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+.header .navbar .btn {
+    color: var(--white);
+    margin-top: 0;
+}
+
+.header .navbar .btn:hover {
+    color: var(--black);
+}
+
+#menu_btn {
+    display: none;
+    font-size: 3rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu_btn:hover {
+    color: var(--primary);
+}
+
+/* end */
+
+/* home */
+
+.home {
+    padding: 0;
+    margin-top: 120px;
+}
+
+.home .slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(--white);
+    color: var(--black);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+/* end */
+
+
+/* about */
+
+.about .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.about .heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    margin-top: -25px;
+}
+
+.about .container .madras img {
+    position: relative;
+    width: 105%;
+    height: 100%;
+    margin-top: 30px;
+
+}
+
+.about .container .about-content {
+    flex: 1 1 50rem;
+    padding-left: 6rem;
+    padding-top: 8rem;
+}
+
+.about .container .about-content h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.about .container .about-content p {
+    font-size: 1.6rem;
+    color: #444;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* feature */
+
+
+
+
+.key h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.key p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 30px 80px;
+    color: var(--primary-color);
+}
+
+.boxmodel {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 20px;
+
+}
+
+.box1 {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: darkred;
+    background-color: lightslategray;
+    box-shadow: 5px 5px 20px black;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.box1 h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2.3rem;
+
+}
+
+.box1 h6 {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px;
+
+}
+
+.word {
+
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -25px;
+    color: black;
+    background-color: lightslategrey;
+
+}
+
+.word i {
+    margin: 15px;
+    font-size: 2rem;
+}
+
+.box1:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.box1 .word:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* courses */
+
+
+
+.head {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    margin-top: -40px;
+}
+
+.courses .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.courses .box-container .box .image {
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.courses .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.courses .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.courses .box-container .box .image h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .5rem 1.5rem;
+    background: gray;
+}
+
+.courses .box-container .box .content {
+    padding: 2rem;
+    position: relative;
+    border: 0.2rem solid var(--black);
+}
+
+.courses .box-container .box .content h4 {
+    position: absolute;
+    background: var(--primary);
+    color: black;
+    top: -3rem;
+    right: 1.5rem;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+.courses .box-container .box .content p {
+    font-size: 1.4rem;
+    color: #444;
+    line-height: 2;
+}
+
+.courses .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.courses .box-container .box .content .stars {
+    padding: 1rem 0;
+}
+
+.courses .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: red;
+}
+
+.courses .box-container .box .content .stars span {
+    font-size: 1.4rem;
+    color: #777;
+    margin-left: .5rem;
+}
+
+.courses .box-container .box .content .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 0.1rem solid var(--black);
+}
+
+.courses .box-container .box .content .icons span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.courses .box-container .box .content .icons span i {
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+/* ends */
+
+
+/* contact */
+
+.contact .heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    margin-top: -40px;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    border: 0.1rem solid var(--primary);
+    padding: 2rem;
+}
+
+.contact .row form h3 {
+    font-size: 2.5rem;
+    color: #444;
+    padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.4rem;
+    border: .1rem solid var(--second);
+    margin: .7rem 0;
+}
+
+.contact .row form .box:focus {
+    color: var(--black);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+/* footer */
+
+.footer {
+    background: var(--second);
+    text-align: center;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share {
+    margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 10%;
+    font-size: 1.7rem;
+    border: .1rem solid red;
+    color: var(--black);
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: red;
+    color: var(--white);
+}
+
+.footer .box-container .box .link {
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--black);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container .box .link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.footer .credit {
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    text-align: center;
+    color: red;
+    border-top: .1rem solid var(--black);
+}
+
+.footer .credit span {
+    color: var(--black);
+}
+
+
+/*  media queires  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width:775px) {
+    #menu_btn {
+        display: inline-block;
+    }
+
+    .header .logo {
+        font-size: 3.5rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active {
+        right: 2rem;
+        transition: .3s linear;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .home .slide {
+        min-height: 40vh;
+    }
+
+    .about .heading {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    .about .container .about-content {
+        margin-left: 130px;
+    }
+
+    .about .container .madras img {
+        width: 150%;
+        height: 100%;
+    }
+
+    .about .container .about-content p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    .key h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 10px;
+    }
+
+    .key p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .boxmodel {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 60px;
+    }
+
+    .courses {
+        margin-top: 60px;
+    }
+
+    .courses .head {
+        text-align: center;
+        font-size: 4rem;
+
+    }
+
+    .courses .box-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 60px;
+
+    }
+
+    .courses .box-container .box .image img {
+        width: 110%;
+        height: 100%;
+    }
+
+    .box {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .contact .heading {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 30px;
+    }
+
+    .contact .row form {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .footer .box-container {
+        display: unset;
+        font-size: 2.6rem;
+    }
+
+    .footer {
+        width: 103%;
+        text-align: center;
+    }
+
+    .footer .box-container .box h3 {
+        margin-top: 30px;
+        font-size: 3.5rem;
+    }
+
+    .footer .box-container .box p {
+        font-size: 2.3rem;
+    }
+
+    .footer .box-container .box .link {
+        font-size: 2.3rem;
+    }
+    .footer .credit {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width:385px) {
+    #menu_btn {
+        display: inline-block;
+        font-size: 5rem;
+    }
+    .header .logo {
+        font-size: 5rem;
+    }
+    .home {
+        width: 250%;
+        margin-left: 45px;
+    }
+    .home .slide {
+        min-height: 50vh;
+    }
+    .about {
+        margin-top: 60px;
+    }
+    .about .heading {
+        margin-right: -550px;
+        font-size: 7rem;
+        margin-top: 20px;
+    }
+    .about .container {
+        display: block;
+    }
+    .about .container .madras img {
+        width: 290%;
+        margin-left: 10px;
+    }
+    .about .container .about-content {
+       display: inline;
+    }
+    .about .container .about-content h3 {
+        font-size: 6rem;
+        margin-top: 30px;
+    }
+    .about .container .about-content p {
+        font-size: 3.7rem;
+        width: 260%;
+        font-weight: 400;
+    }
+  
+    .header .navbar a {
+        font-size: 5rem;
+    }
+    .about .container .btn {
+        font-size: 5.4rem;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+  
+    .key h1 {
+        font-size: 7rem;
+        margin-top: 20px;
+        margin-right: -580px;
+    }
+    .key p {
+        font-size: 3.6rem;
+        width: 260%;
+        margin-left: 10px;
+        display: inline-block;
+        margin-top: 50px;
+    }
+    .boxmodel {
+        display: block;
+    }
+    .box1 {
+       width: 250%;
+       height: 490px;
+       margin-left: 95px;
+    }
+    .box1 h4 {
+        text-align: center;
+        font-size: 6rem;
+    }
+    .box1 h6 {
+        font-size: 4rem;
+    }
+    .box1 .word {
+      margin-left: 280px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    .box1 .word i {
+        font-size: 6rem;
+    }
+    .courses .head {
+        font-size: 7rem;
+        margin-top: 20px;
+        margin-right: -650px;  
+    }
+    .courses .box-container {
+        display: block;
+        margin-right: -40px;
+    }
+
+    .courses .box-container .box {
+        width: 250%;
+        margin-bottom: 60px;
+        margin-right: -40px;
+    }
+    .courses .box-container .box .image img {
+        width:90%;
+        height:280%;
+    }
+    .courses .box-container .box .content {
+        width: 90%;
+    }
+    .contact .heading {
+        font-size: 7rem;
+        margin-top: 20px;
+        margin-right: -550px; 
+    }
+   
+  .contact .row {
+    width: 220%;
+    margin-left:90px;
+    margin-top: 40px;
+  }
+
+
+        
+.footer {
+   margin-left: 10px;
+   width: 270%;
+}
+}
